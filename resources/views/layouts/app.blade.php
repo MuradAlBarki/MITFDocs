@@ -35,13 +35,13 @@
                     <!-- Sidebar  -->
                     <nav id="sidebar">
                         <div class="sidebar-header">
-                            <h3>توثيقات نظام مسارات المصرفي</h3>
+                            <h3>الوثائق</h3>
                         </div>
                 
                         <ul class="list-unstyled components">
-                            <p>الخصائص والخدمات</p>
+                            <p>نظام مسارات المصرفي</p>
                             <li class="active">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                                <a id="home" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">الرئيسية</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
                                         <a href="#">Home 1</a>
