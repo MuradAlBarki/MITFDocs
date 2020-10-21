@@ -14,8 +14,6 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
             
-                <title>Collapsible sidebar using Bootstrap 4</title>
-            
                 <!-- Bootstrap CSS CDN -->
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
                 <!-- Our Custom CSS -->
@@ -44,44 +42,45 @@
                                 <a id="home" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">الرئيسية</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
-                                        <a href="#">Home 1</a>
+                                        <a class="outline" name="outline1" href="#">عنوان 1</a>
                                     </li>
                                     <li>
-                                        <a href="#">Home 2</a>
+                                        <a class="outline" name="outline2" href="#">عنوان 2</a>
                                     </li>
                                     <li>
-                                        <a href="#">Home 3</a>
+                                        <a class="outline" name="outline3" href="#">عنوان 3</a>
                                     </li>
+                                   
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="#">خصائص</a>
                             </li>
                             <li>
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">صفحات</a>
                                 <ul class="collapse list-unstyled" id="pageSubmenu">
                                     <li>
-                                        <a href="#">Page 1</a>
+                                        <a href="#">صفحة 1</a>
                                     </li>
                                     <li>
-                                        <a href="#">Page 2</a>
+                                        <a href="#">صحفة 2</a>
                                     </li>
                                     <li>
-                                        <a href="#">Page 3</a>
+                                        <a href="#">صفحة 3</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Portfolio</a>
+                                <a href="#">المكونات</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#">التركيب</a>
                             </li>
                         </ul>
                 
                         <ul class="list-unstyled CTAs">
                             <li>
-                                <a href="#" class="download">link to resources</a>
+                                <a href="#" class="download">رابط الى المراجع</a>
                             </li>
                         </ul>
                     </nav>
@@ -97,22 +96,22 @@
                                 <i class="fas fa-align-justify"></i>
                             </button>
             
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
                                 {{-- <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Page</a>
+                                        <a class="nav-link" href="#">صفحة</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Page</a>
+                                        <a class="nav-link" href="#">صفحة</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Page</a>
+                                        <a class="nav-link" href="#">صفحة</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Page</a>
+                                        <a class="nav-link" href="#">صفحة</a>
                                     </li>
                                 </ul> --}}
-                            </div>
+                            {{-- </div> --}}
                         </div>
                     </nav>
                     @yield('content')
@@ -121,8 +120,10 @@
             </div>
         </div>
                
-               <!-- jQuery CDN - Slim version (=without AJAX) -->
-               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
                <!-- Popper.JS -->
                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
                <!-- Bootstrap JS -->
